@@ -111,7 +111,7 @@ class Problem:
       return False
   
   def check(self, no_problem, *args, **kwargs):
-    if not problem.validate(no_problem, *args, **kwargs):
+    if not self.validate(no_problem, *args, **kwargs):
       return
     if no_problem == 1:
       h0 = sha1(str(args[0]).encode("utf-8")).hexdigest()
