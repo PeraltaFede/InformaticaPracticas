@@ -117,7 +117,7 @@ class Problem:
       h0 = sha1(str(args[0]).encode("utf-8")).hexdigest()
       h1 = sha1(str(args[1]).encode("utf-8")).hexdigest()
       if h1 == self.results[1] and h0 == self.results[0]:
-        print("\U0001f973 \U0001f973 Enhorabuena ! \U0001f973 \U0001f973 \n")
+        print(f"\U0001f973 \U0001f973 Enhorabuena {name}! \U0001f973 \U0001f973 \n")
         return HTML("""
         <video alt="test" controls autoplay=1>
         <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
