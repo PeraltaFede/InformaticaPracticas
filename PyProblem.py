@@ -133,7 +133,7 @@ class Problem:
       h3 = sha1(str(args[3]).encode("utf-8")).hexdigest()
       h4 = sha1(str(args[4]).encode("utf-8")).hexdigest()
       if h0 == self.results[2] and h1 == self.results[3] and h2 == self.results[4] and h3 == self.results[5]and h4 == self.results[6]:
-        print("\U0001f973 \U0001f973 Enhorabuena ! \U0001f973 \U0001f973 \n")
+        print(f"\U0001f973 \U0001f973 Enhorabuena {name}! \U0001f973 \U0001f973 \n")
         return HTML("""
         <video alt="test" controls autoplay=1>
         <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
@@ -146,7 +146,7 @@ class Problem:
       res_str = ''.join(str(e) for e in args[0])
       h0 = sha1(res_str.encode("utf-8")).hexdigest()
       if h0 == self.results[7]:
-        print("\U0001f973 \U0001f973 Enhorabuena ! \U0001f973 \U0001f973 \n")
+        print(f"\U0001f973 \U0001f973 Enhorabuena {name}! \U0001f973 \U0001f973 \n")
         return HTML("""
         <video alt="test" controls autoplay=1>
         <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
@@ -172,7 +172,7 @@ class Problem:
       res_str = ''.join(str(e) for e in results)
       h0 = sha1(res_str.encode("utf-8")).hexdigest()
       if h0 == self.results[7]:
-        print("\U0001f973 \U0001f973 Enhorabuena ! \U0001f973 \U0001f973 \n")
+        print(f"\U0001f973 \U0001f973 Enhorabuena {name}! \U0001f973 \U0001f973 \n")
         return HTML("""
         <video alt="test" controls autoplay=1>
         <source src="https://openpuppies.com/mp4/%s.mp4"  type="video/mp4">
